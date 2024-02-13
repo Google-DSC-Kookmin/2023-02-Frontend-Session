@@ -25,7 +25,7 @@ const AppWrap = styled.div`
 `;
 
 function App() {
-  const API_KEY = "6e4947456e6e626537324f4a726854";
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
